@@ -58,7 +58,7 @@ d$text <- iconv(d$text, from = "UTF-8", to = "ASCII", sub = "")
 
 
 library(tm)
-#making a corpus of a vector source ; corpus is a bunch of docs, here we have more than 3k reviews
+#making a corpus of a vector source ; corpus is a bunch of docs
 review_corpus <- VCorpus(VectorSource(d$text))
 #Cleaning corpus - pre_processing
 clean_corpus <- function(cleaned_corpus){
